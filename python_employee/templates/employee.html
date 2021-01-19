@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Employee</title>
+    <style>
+        body{
+            background: -webkit-linear-gradient(left, #a6ffde, #84CEEB, #C1C8C4);
+    background: -o-linear-gradient(right, #a6ffde, #84CEEB, #C1C8C4);
+    background: -moz-linear-gradient(right, #a6ffde, #84CEEB, #C1C8C4);
+    background: linear-gradient(to right, #a6ffde, #84CEEB, #C1C8C4);
+    background-color: #84CEEB;
+        }
+        .button {
+    background-color: #024488 !important;
+    border-color: #024488 !important;
+    color: #fff !important;
+}
+
+.button:hover {
+    background-color: #024488 !important;
+}
+    </style>
+</head>
+<body>
+    <header>
+
+        <h3>Hello! Welcome to Employee Details Page</h3>
+
+        <form action="/employee" method = "GET">
+            <p>To view the Employee List in JSON  <a href="http://127.0.0.1:5000/employee" style="color:indianred">Click here.</a> </p>
+        </form>
+        <form  action="/sort" method="GET">
+            <p>To sort the Employee List enter the key below by which you need to sort</p>
+            <label for="sortby">Sort with:</label>
+            <input type="text" id="sortby" name="sortby" required> <br><br>
+            <input type="submit" class="button">
+        </form>
+
+    </header>
+</body>
+</html>
