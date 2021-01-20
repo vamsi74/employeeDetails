@@ -5,7 +5,7 @@ app=Flask(__name__)
 
 @app.route('/')
 def index():
-    return render_template('employee.html', posts='data.xml')
+    return render_template('employee.html')
 
 @app.route('/employee',methods=['GET'])
 def get():
